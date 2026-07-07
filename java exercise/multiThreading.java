@@ -32,7 +32,7 @@ public class multiThreading {
         NumberThread t1 = new NumberThread();
         AlphabetThread t2 = new AlphabetThread();
 
-        t1.start(); // Start Number Thread
-        t2.start(); // Start Alphabet Thread
+        t1.start();
+        t2.start(); 
     }
 }
