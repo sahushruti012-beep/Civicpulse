@@ -1,0 +1,64 @@
+.settings-page{
+    background:#f8fafc;
+    min-height:100vh;
+    padding:60px 0;
+}
+
+.settings-page h1{
+    color:var(--heading);
+    margin-bottom:10px;
+}
+
+.settings-page p{
+    color:var(--text);
+    margin-bottom:40px;
+}
+
+.settings-card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.settings-card h2{
+    margin-bottom:20px;
+    color:var(--heading);
+}
+
+.settings-card input{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.settings-card label{
+    display:block;
+    margin-bottom:15px;
+    font-size:16px;
+    color:var(--heading);
+}
+
+.settings-card label input{
+    width:auto;
+    margin-right:10px;
+}
+
+.settings-card button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.settings-card button:hover{
+    background:var(--secondary);
+}

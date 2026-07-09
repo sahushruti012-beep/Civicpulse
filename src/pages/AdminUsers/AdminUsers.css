@@ -1,0 +1,91 @@
+.admin-users{
+    background:#f8fafc;
+    min-height:100vh;
+    padding:60px 0;
+}
+
+.admin-users h1{
+    color:var(--heading);
+    margin-bottom:10px;
+}
+
+.admin-users p{
+    color:var(--text);
+    margin-bottom:30px;
+}
+
+.search-user{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:14px 18px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.search-user input{
+    width:100%;
+    border:none;
+    outline:none;
+}
+
+.users-table{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.users-table table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.users-table th{
+    background:var(--primary);
+    color:white;
+    padding:16px;
+    text-align:left;
+}
+
+.users-table td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+}
+
+.action-icons{
+    display:flex;
+    gap:16px;
+    cursor:pointer;
+}
+
+.action-icons svg:hover{
+    color:var(--primary);
+}
+
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:.9rem;
+    font-weight:600;
+}
+
+.status.active{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.inactive{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+@media(max-width:768px){
+
+.users-table{
+overflow-x:auto;
+}
+
+}

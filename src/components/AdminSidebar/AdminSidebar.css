@@ -1,0 +1,48 @@
+.admin-sidebar{
+    width:250px;
+    background:#1e293b;
+    min-height:100vh;
+    padding:30px 20px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.admin-sidebar h2{
+    color:white;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.admin-sidebar a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#cbd5e1;
+    text-decoration:none;
+    padding:14px;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.admin-sidebar a:hover,
+.admin-sidebar a.active{
+    background:var(--primary);
+    color:white;
+}
+
+.logout-btn{
+    margin-top:30px;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ef4444;
+    color:white;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
