@@ -1,0 +1,38 @@
+:root{
+
+    /* Primary Colors */
+    --primary:#4F46E5;
+    --primary-hover:#4338CA;
+    --secondary:#8B5CF6;
+
+    /* Backgrounds */
+    --background:#FAF8FF;
+    --white:#FFFFFF;
+    --light:#F3F0FF;
+
+    /* Text */
+    --heading:#1E293B;
+    --text:#64748B;
+
+    /* Success */
+    --success:#10B981;
+
+    /* Warning */
+    --warning:#F59E0B;
+
+    /* Error */
+    --danger:#EF4444;
+
+    /* Border */
+    --border:#E2E8F0;
+
+    /* Shadow */
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    /* Radius */
+    --radius:15px;
+
+    /* Transition */
+    --transition:.3s ease;
+
+}

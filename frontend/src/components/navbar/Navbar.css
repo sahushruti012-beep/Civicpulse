@@ -1,0 +1,164 @@
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+    width:100%;
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    height:80px;
+    display:flex;
+    align-items:center;
+}
+
+/* Logo */
+
+.logo{
+    font-size:1.9rem;
+    font-weight:700;
+    color:var(--heading);
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    margin:0 auto;
+}
+
+.nav-links a{
+    color:var(--text);
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:var(--primary);
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+/* Right Side */
+
+.nav-action{
+    margin-left:auto;
+}
+
+.login-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--primary);
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:var(--secondary);
+    transform:translateY(-2px);
+}
+
+/* Mobile Login */
+
+.mobile-login-btn{
+    display:none;
+}
+
+/* Mobile Menu */
+
+.menu-icon{
+    display:none;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:992px){
+
+.nav-links{
+
+position:absolute;
+top:80px;
+left:-100%;
+width:100%;
+background:white;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+padding:30px 0;
+
+transition:.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.mobile-login-btn{
+
+display:flex;
+align-items:center;
+gap:8px;
+
+background:var(--primary);
+color:white;
+
+padding:12px 22px;
+border-radius:10px;
+
+}
+
+.nav-action{
+
+display:none;
+
+}
+
+.menu-icon{
+
+display:block;
+margin-left:auto;
+
+}
+
+}
